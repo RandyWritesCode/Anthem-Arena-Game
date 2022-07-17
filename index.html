@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=">
+  <title>Anthem Battle Arena</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src='js/gamemanager.js'></script>
+  <script src='js/player.js'></script>
+  <script src='js/enemy.js'></script>
+</head>
+
+<body>
+  <div class='header'>
+    <p>Play the Anthem Battle Arena Game!</p>
+    <h2>Choose your Javelin</h2>
+  </div>
+  <div class='interface'>
+    <a href="#" onclick="GameManager.setGameStart('Ranger')">
+      <img src="images/ranger.png" alt="ranger">
+      <div>
+        <h3>Ranger</h3>
+        <p>Mostly good at everything.</p>
+      </div>
+    </a>
+    <a href="#" onclick="GameManager.setGameStart('Colossus')">
+      <img src="images/colossus.png" alt="colossus">
+      <div>
+        <h3>Colossus</h3>
+        <p>Heavy armor, slow movement.</p>
+      </div>
+    </a>
+    <a href="#" onclick="GameManager.setGameStart('Interceptor')">
+      <img src="images/interceptor.png" alt="interceptor">
+      <div>
+        <h3>Interceptor</h3>
+        <p>Agile attacks. Light armor.</p>
+      </div>
+    </a>
+    <a href="#" onclick="GameManager.setGameStart('Storm')">
+      <img src="images/storm.png" alt="storm">
+      <div>
+        <h3>Storm</h3>
+        <p>Light armor, moderate movement, powerful gear.</p>
+      </div>
+    </a>
+
+  </div>
+  <div class='actions'>
+
+  </div>
+  <div class='arena container'>
+
+    <div class='enemy item'>
+
+    </div>
+
+  </div>
+</body>
+
+</html>
